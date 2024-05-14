@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FB6B6B;
+  font-family: 'Recursive', sans-serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.welcome {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome img {
+  width: 136px;
+  margin: 10px auto;
+}
+
+.welcome h1 {
+  margin: 10px;
+  font-family: 'Righteous', cursive;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+.welcome button {
+  width: 246px;
+  height: 54px;
+  margin: 10px;
+  font-size: 18px;
+  color: #D70900;
+  background-color: #FFFFFF;
+  border: 1px solid #D70900;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recall {
+  width: 100%;
+}
+
+.recall header {
+  width: 300px;
+  margin: 48px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recall header img {
+  width: 52px;
+}
+
+.recall h1 {
+  font-family: 'Righteous', cursive;
+  color: #FFFFFF;
+  font-size: 36px;
+}
+
+.recall .content {
+  width: 300px;
+}
+
+.recall .footer {
+  width: 100%;
+}
+
+.recall .content {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.questions .card {
+  margin: 15px auto;
+  width: 100%;
+  height: fit-content;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.questions .card:last-of-type {
+  margin-bottom: 85px;
+}
+
+.questions .card-inner,
+.questions .card-inner .back-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.0s;
+  transform-style: preserve-3d;
+}
+
+.questions .card-inner .front {
+  padding: 20px;
+  height: 65px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions .card-inner .front p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.questions .card-inner .front ion-icon {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.questions .card-inner .back {
+  height: 131px;
+  border-radius: 5px;
+  perspective: 1000px;
+}
+
+.questions .card-inner .back p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.questions .card-inner .back-inner .question {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.questions .card-inner .back-inner .answer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backface-visibility: hidden;
+}
+
+.questions .card-inner .back-inner {
+  background-color: #FFFFD4;
+  border-radius: 5px;
+  position: relative;
+}
+
+.questions .card-inner .back-inner .question img {
+  width: 20px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.questions .card-inner .back-inner .question {
+  padding: 15px;
+  background-color: #FFFFD4;
+  border-radius: 5px;
+}
+
+.questions .card-inner .back-inner .answer {
+  padding: 15px;
+  background-color: #FFFFD4;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+}
+
+.questions .card-inner .back.flipped .back-inner {
+  transform: rotatey(180deg);
+}
+
+.questions .card-inner .back-inner .answer-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions .card-inner .back-inner .answer-buttons button {
+  width: 85px;
+  height: 37px;
+  word-wrap: break-word;
+  font-family: 'Recursive', sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.red-text {
+  color: #FF3030;
+  cursor: default;
+}
+
+.yellow-text {
+  color: #FF922E;
+  cursor: default;
+}
+
+.green-text {
+  color: #2FBE34;
+  cursor: default;
+}
+
+.red {
+  background-color: #FF3030;
+}
+
+.yellow {
+  background-color: #FF922E;
+}
+
+.green {
+  background-color: #2FBE34;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.recall footer {
+  width: 100%;
+  height: fit-content;
+  min-height: 70px;
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+.recall footer .footer-content {
+  margin: 10px auto;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recall footer .footer-content p {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.recall footer .icons-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recall footer .icons-list ion-icon {
+  margin: auto 2px;
+}
+
+.recall footer .footer-content .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recall footer .footer-content .message img {
+  width: 23px;
+  height: 23px;
+  margin-right: 8px;
+}
+
+.recall footer .footer-content button {
+  width: 167px;
+  height: 32px;
+  background-color: #FB6B6B;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  font-family: 'Recursive', sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
