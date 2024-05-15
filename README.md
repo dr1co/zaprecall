@@ -8,7 +8,7 @@ Hi, my name is Adriano, an undergraduate in Software Engineering in Brazil that 
 
 This project was firstly bootstrapped with [Create React App (CRA)](https://github.com/facebook/create-react-app), but since CRA is now deprecated, I rewrote this project using Vite!
 
-This is my second project involving the use of React, with more complexity and more concepts involved. This is the first time I used state variables in react (A.K.A. the useState hook).
+This is my second project involving the use of React, with more complexity and more concepts involved. This is the first time I used state variables in react (A.K.A. the useState hook). Note that this project is entirely in Portuguese, and I plan on translating the questions to English in a future update.
 
 ### Features
 
@@ -43,15 +43,19 @@ To learn React, the essential stuff, check out the [React documentation](https:/
 
 ## <a id="ptbr"> Descrição (PT-BR) </a>
 
-Oi, meu nome é Adriano, sou graduando em Engenharia de Software no Brasil e gosto de desenvolvimento web. Este é o Instagram React, uma recriação da página principal do Instagram usando... isso mesmo! React.
+Oi, meu nome é Adriano, sou graduando em Engenharia de Software no Brasil e gosto de desenvolvimento web. Este é o ZapRecall, um app de celular que envolve o uso de flashcards para fins de estudo.
 
 Este projeto foi inicialmente produzido com [Create React App (CRA)](https://github.com/facebook/create-react-app), mas como o CRA agora está obsoleto, reescrevi este projeto usando o Vite!
 
-Este é o meu primeiro projeto envolvendo o uso de React. Não é o melhor, mas estou bastante orgulhoso dele! Está completamente em português, e não tenho intenção de traduzi-lo para o inglês no momento.
+Este é o meu segundo projeto envolvendo o uso de React, com maior complexidade e mais conceitos envolvidos. Esse é o primeiro projeto em que faço uso de variáveis de estado (o hook useState). Note também que o projeto todo está em português, mas tenho intenção de traduzir as questões para o inglês em uma futura atualização.
 
 ### Funcionalidades
 
-Este projeto é puramente visual, ou seja, você pode clicar em alguns componentes e ícones aqui e ali, mas eles não alteram a experiência do usuário. O objetivo deste projeto foi principalmente aprender e entender a componentização usando React.
+O fluxo do aplicativo é bastante simples. O usuário inicia o processo de lembrança e haverá 8 perguntas sobre React e JSX. Em seguida, eles podem tocar no botão "play" para ler a pergunta e tentar respondê-la em voz alta ou mentalmente e depois podem virar o cartão.
+
+Ao virar o flashcard, haverá a resposta e o usuário pode selecionar se não conseguiu lembrar da resposta, se lembrou vagamente ou se acertou em cheio. Isso se repetirá para todas as 8 perguntas exibidas.
+
+Depois de responder todas as perguntas, o processo é concluído e o aplicativo mostra quantas perguntas o usuário conseguiu lembrar e quantas não, deixando o usuário reiniciar o processo se desejar.
 
 ### Dependências
 
