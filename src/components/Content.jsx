@@ -8,6 +8,8 @@ import {
 } from "react-icons/io5";
 
 export default function Content(props) {
+  shuffleQuestions(props.questionsDeck);
+
   return (
     <div className="content">
       <Questions>
@@ -103,7 +105,7 @@ function CardFace(props) {
         <div className="front">
           <h2>Pergunta {props.number}</h2>
           {/*<ion-icon name="play-outline" onClick={props.toggleView}></ion-icon>*/}
-          <IoPlayOutline onClick={props.toggleView} />
+          <IoPlayOutline className="play-icon" onClick={props.toggleView} />
         </div>
       );
   }
@@ -150,4 +152,13 @@ function CardContent(props) {
 
 function Questions(props) {
   return <div className="questions">{props.children}</div>;
+}
+
+function shuffleQuestions(questions) {
+  for (let i = questions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [questions[i], questions[j]] = [questions[j], questions[i]];
+  }
+
+  return questions;
 }

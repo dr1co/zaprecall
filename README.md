@@ -72,8 +72,7 @@ No diretório do projeto, você pode executar o mais importante para visualizar 
 Este script executa o aplicativo no modo de desenvolvimento.\
 Abra [http://localhost:5173](http://localhost:5173) para visualizá-lo no navegador.
 
-A página será recarregada se você fizer edições.\
-Você também verá quaisquer erros de lint no console.
+A página será recarregada se você fizer edições no código.
 
 ### Saiba Mais
 
