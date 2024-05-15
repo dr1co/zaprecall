@@ -36,13 +36,62 @@ strong {
 .welcome button {
   width: 246px;
   height: 54px;
-  margin: 10px;
+  margin: 10px auto;
   font-size: 18px;
   color: #D70900;
   background-color: #FFFFFF;
   border: 1px solid #D70900;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.zap-goal {
+  display: flex;
+  align-items: center;
+}
+
+.zap-goal p {
+  font-size: 16px;
+  margin-right: 8px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.zap-goal input {
+  width: 60px;
+  height: 40px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
+  color: #D70900;
+  border: 0 solid transparent;
+  border-radius: 5px;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.zap-goal input::-webkit-inner-spin-button,
+.zap-goal input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.warn {
+  background-color: #FFDBDB;
+  border: 3px solid #D70900;
+}
+
+p.warn {
+  font-size: 10px;
+  color: #D70900;
+  font-weight: 700;
+  text-align: center;
+  display: none;
+}
+
+p.visible {
+  display: flex;
 }
 
 .recall {
@@ -248,6 +297,7 @@ strong {
 .recall footer .footer-content p {
   margin: 10px auto;
   text-align: center;
+  line-height: 1.2;
 }
 
 .recall footer .icons-list {

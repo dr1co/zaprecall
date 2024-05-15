@@ -7,6 +7,7 @@ import "./assets/css/style.css";
 
 function App() {
   const [page, setPage] = React.useState("Welcome");
+  const [goal, setGoal] = React.useState(0);
 
   function toPage(p) {
     setPage(p);
@@ -16,13 +17,17 @@ function App() {
     case "Recall":
       return (
         <>
-          <Recall toPage={() => toPage("Welcome")} />
+          <Recall toPage={() => toPage("Welcome")} goal={goal} />
         </>
       );
     default:
       return (
         <>
-          <Welcome toPage={() => toPage("Recall")} />
+          <Welcome
+            toPage={() => toPage("Recall")}
+            goal={goal}
+            setGoal={setGoal}
+          />
         </>
       );
   }

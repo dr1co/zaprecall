@@ -20,7 +20,7 @@ export default function Footer(props) {
 
   switch (finished) {
     case true:
-      if (verifyRedAnswers(props.questionsAnswered)) {
+      if (verifyRedAnswers(props.questionsAnswered, props.goal)) {
         return (
           <footer>
             <div className="footer-content">
@@ -33,7 +33,8 @@ export default function Footer(props) {
               </div>
               <p>
                 {" "}
-                Você não esqueceu de <br /> nenhum flashcard!
+                Você atingiu a sua meta <br />
+                de {props.goal} flashcards!
               </p>
               <div className="icons-list">
                 {props.questionsAnswered.map((icon, index) => (
@@ -110,9 +111,9 @@ function Icon(props) {
   }
 }
 
-function verifyRedAnswers(arr) {
+function verifyRedAnswers(arr, goal) {
   let counter = 0;
   for (let i = 0; i < arr.length; i++) if (arr[i] !== "red") counter++;
-  if (counter === arr.length) return true;
+  if (counter >= goal) return true;
   else return false;
 }

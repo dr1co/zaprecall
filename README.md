@@ -12,7 +12,7 @@ This is my second project involving the use of React, with more complexity and m
 
 ### Features
 
-The app flow is pretty simple. The user starts the recall and there will be 8 questions about React and JSX. Then they can tap the `play` button to read the question and try to answer it out loud or in their heads and then can flip the card.
+The app flow is pretty simple. The user can set a goal of how many flashcards he wants to remember, starts the recall and there will be 8 shuffled questions about React and JSX. Then they can tap the `play` button to read the question and try to answer it out loud or in their heads and then can flip the card.
 
 Upon flipping the flashcard, there will be the answer and the user can select if they couldn't remember the answer, barely could or if they nailed it. That will repeat for all the 8 questions displayed.
 
@@ -51,11 +51,11 @@ Este é o meu segundo projeto envolvendo o uso de React, com maior complexidade 
 
 ### Funcionalidades
 
-O fluxo do aplicativo é bastante simples. O usuário inicia o processo de lembrança e haverá 8 perguntas sobre React e JSX. Em seguida, eles podem tocar no botão "play" para ler a pergunta e tentar respondê-la em voz alta ou mentalmente e depois podem virar o cartão.
+O fluxo do aplicativo é bastante simples. O usuário coloca uma meta de flashcards que deseja lembrar, inicia o processo de lembrança e haverá 8 perguntas embaralhadas sobre React e JSX. Em seguida, ele podem tocar no botão `play` para ler a pergunta e tentar respondê-la em voz alta ou mentalmente e depois podem virar o cartão.
 
 Ao virar o flashcard, haverá a resposta e o usuário pode selecionar se não conseguiu lembrar da resposta, se lembrou vagamente ou se acertou em cheio. Isso se repetirá para todas as 8 perguntas exibidas.
 
-Depois de responder todas as perguntas, o processo é concluído e o aplicativo mostra quantas perguntas o usuário conseguiu lembrar e quantas não, deixando o usuário reiniciar o processo se desejar.
+Depois de responder todas as perguntas, o processo é concluído e o aplicativo mostra quantas perguntas o usuário conseguiu lembrar e quantas não, deixando-o reiniciar o processo se desejar.
 
 ### Dependências
 

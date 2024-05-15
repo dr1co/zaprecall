@@ -37,6 +37,7 @@ export default function Recall(props) {
         questionsAnswered={questionsAnswered}
         setQuestionsAnswered={setQuestionsAnswered}
         toHomePage={props.toPage}
+        goal={props.goal}
       />
     </section>
   );
