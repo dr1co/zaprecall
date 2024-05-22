@@ -1,4 +1,4 @@
-# ZapRecall
+# Zaprecall
 
 Para ler em português, [clique aqui](#ptbr)
 
@@ -19,6 +19,10 @@ The user then can tap the `play` button to read the question and try to answer i
 Upon flipping the flashcard, there will be the answer and the user can select if they couldn't remember the answer, barely could or if they nailed it. That will repeat for all the 8 questions displayed.
 
 Once they finished answering all of the questions, the process is finished and the app shows how many questions the user could remember and how many they could not, leaving the user to restart the process if they want.
+
+### Deployment
+
+If you want to try the app but don't want to clone this repo to install everything, you can check out the deployment [here](https://zaprecall-navy.vercel.app/)
 
 ### Dependencies
 
