@@ -65,6 +65,10 @@ Ao virar o flashcard, haverá a resposta e o usuário pode selecionar se não co
 
 Depois de responder todas as perguntas, o processo é concluído e o aplicativo mostra quantas perguntas o usuário conseguiu lembrar e quantas não, deixando-o reiniciar o processo se desejar.
 
+### Implantação
+
+Se você quiser testar o aplicativo, mas não pretende clonar o repositório para instalar tudo, você pode checar a implantação deste projeto [aqui](https://zaprecall-navy.vercel.app/)
+
 ### Dependências
 
 Como mencionado anteriormente, esse projeto foi feito utilizando <span style="color: #66DAFB">React</span> e <span style="color: #FFB509">Vite</span>, com <span style="color: #007bff">CSS</span> para estilização. Para rodar o projeto normalmente, você precisará instalar as suas dependências com o seguinte script:
